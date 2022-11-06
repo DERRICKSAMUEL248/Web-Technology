@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expt9B
+</title>
+<style>
+body {
+
+background-image: url('https://media.istockphoto.com/id/1284691550/vector/blue-abstract-geometric-dynamic-shape-paper-layers-subtle-background-vector.jpg?s=612x612&w=0&k=20&c=8a0N0F6hcHc08o2aZgTZdreUMhTxS24Zp61KgdQzGgM=');
+
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+hr {
+border-radius: 30px;
+}
+</style>
+<script
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+
+<script>
+var ap = angular.module('q2', ['ngRoute']);
+ap.config(function($routeProvider) {
+$routeProvider.when('/one', {
+templateUrl: 'URK20CS2110.html'
+})
+.when('/two', {
+templateUrl: 'URK20CS2106.html'
+})
+.when('/three', {
+templateUrl: 'URK20CS3002.html'
+})
+.when('/four', {
+templateUrl: 'URK20CS2114.html'
+});
+});
+</script>
+</head>
+<body>
+<h1 align="center" style="color:antiquewhite">AngularJS Routing</h2>
+<hr>
+<div ng-app="q2" align="center">
+<h2 align="center" style="color: teal;">Click Any Register Number to view its
+profile!!</h4>
+<a href="#!one">URK20CS2110</a><br><br>
+<a href="#!two">URK20CS2106</a><br><br>
+<a href="#!three">URK20CS3002</a><br><br>
+<a href="#!four">URK20CS2114</a><br><br>
+<div ng-view></div>
+</div>
+</body>
+</html>
